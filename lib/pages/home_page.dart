@@ -57,9 +57,27 @@ class _HomePageState extends State<HomePage> {
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: GridTile(
-                    header: Text(item.name),
+                    header: Container(
+                      padding: EdgeInsets.all(8),
+                      child: Text(
+                        item.name,
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                      decoration: BoxDecoration(color: Colors.deepPurple),
+                    ),
                     child: Image.network(item.image),
-                    footer: Text("\$${item.price}"),
+                    footer: Container(
+                      padding: EdgeInsets.all(8),
+                      child: Text(
+                        ("\$${item.price.toString()}"),
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                      decoration: BoxDecoration(color: Colors.black),
+                    ),
                   ),
                 );
               },
