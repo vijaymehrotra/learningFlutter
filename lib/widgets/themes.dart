@@ -9,7 +9,8 @@ class MyTheme {
         cardColor: Colors.white,
         canvasColor: creamishColor,
         highlightColor: darkBluish,
-        colorScheme: ColorScheme.fromSwatch().copyWith(secondary: darkBluish,brightness: Brightness.light),
+        colorScheme: ColorScheme.fromSwatch()
+            .copyWith(secondary: darkBluish, brightness: Brightness.light),
         appBarTheme: AppBarTheme(
             color: Colors.white,
             titleTextStyle: TextStyle(
@@ -24,16 +25,19 @@ class MyTheme {
         cardColor: Colors.black,
         canvasColor: darkcreamishColor,
         highlightColor: LightdarkBluish,
-        colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Colors.white,brightness: Brightness.dark),
+        colorScheme: ColorScheme.fromSwatch()
+            .copyWith(secondary: Colors.white, brightness: Brightness.dark),
         buttonTheme: ButtonThemeData(buttonColor: LightdarkBluish),
+        textTheme: TextTheme(titleLarge: TextStyle(color: Colors.white)),
         appBarTheme: AppBarTheme(
+            color: Colors.transparent,
+            elevation: 0.0,
             titleTextStyle: TextStyle(
-              color: Colors.black,
+              color: Colors.white,
               fontSize: 18,
             ),
             iconTheme: IconThemeData(color: Colors.white)),
-        // textTheme: Theme.of(context).textTheme,
-        textTheme: TextTheme(titleLarge: TextStyle(color: Colors.white)),
+        // textTheme: Theme.of(context).textTheme.copyWith(headline6: context.textTheme.headline6?.copyWith(color: Colors.white)),
       );
 
   //colors
