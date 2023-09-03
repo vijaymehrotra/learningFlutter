@@ -8,8 +8,18 @@ class CatalogHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-      "Catalog App".text.xl5.bold.color(MyTheme.darkBluish).make(),
-      "Trending Products".text.xl2.make(),
+      // "Catalog App".text.xl5.bold.color(Colors.red).make(),
+      "Catalog App"
+          .text
+          .xl5
+          .bold
+          .color(context.theme.colorScheme.secondary)
+          .make(),
+      "Trending Products"
+          .text
+          .xl2
+          .color(context.theme.colorScheme.secondary)
+          .make(),
     ]);
   }
 }
