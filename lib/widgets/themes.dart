@@ -12,6 +12,7 @@ class MyTheme {
         colorScheme: ColorScheme.fromSwatch()
             .copyWith(secondary: darkBluish, brightness: Brightness.light),
         appBarTheme: AppBarTheme(
+          elevation: 0.0,
             color: Colors.white,
             titleTextStyle: TextStyle(
               color: Colors.black,
