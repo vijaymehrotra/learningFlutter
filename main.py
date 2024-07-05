@@ -1,9 +1,10 @@
-print("hello world!!")
+print("Hello, world!")  # Consistent capitalization and better readability
 
 
 def welcome():
-    print("welcome to githib actions first time")  # Indent with 4 spaces
+    """Prints a welcome message."""
+    print("Welcome to GitHub Actions for the first time!")
 
 
-print("This is tutorial for githib actions")
-welcome()
+print("This is a tutorial for GitHub Actions.")
+welcome()  # Call the function for demonstration
